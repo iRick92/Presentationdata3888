@@ -1,9 +1,8 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Presentation</title>
+    <title>Presentation.utf8</title>
     <meta charset="utf-8" />
-    <meta name="author" content="Hoon" />
     <script src="Presentation_files/header-attrs-2.1/header-attrs.js"></script>
     <link href="Presentation_files/remark-css-0.0.1/default.css" rel="stylesheet" />
     <link rel="stylesheet" href="sydney.css" type="text/css" />
@@ -16,7 +15,7 @@
 
 class: segue-red
 
-# KTMT Design Schedule
+# KTPT Design Schedule
 
 ### A presentation by Group 20  
 
@@ -31,13 +30,13 @@ background-size: 15%
 .left[
 1. The issue at hand
 
-2. Introducing the KTMT
+2. Introducing the KTPT
 
-3. Inner workings of the KTMT
+3. Inner workings of the KTPT
 
-4. Basic UI plans
+4. UI plans
 
-5. Shortcomings and limitations of the KTMT
+5. Shortcomings and limitations of the KTPT
 
 6. Approach in Data collection
 
@@ -67,11 +66,11 @@ background-image: url(USydLogo.svg)
 background-position: 95% 5%
 background-size: 15%
 
-## .white[Introducing the KTMT]
+## .white[Introducing the KTPT]
 
 .left[
-The Kidney Tranplantation Metric Tool is being designed to aid doctors and health professionals in predicting the long term Kidney graft rejection.
-The KTMT has two components:
+The Kidney Tranplantation Prediction Tool is being designed to aid doctors and health professionals in predicting the long term Kidney graft rejection.
+The KTPT has two components:
 1. Eplet and HLA mismatch prediction Tool
 The first component utilizes several metrics derived from the survival analysis of Eplet, HLA and DSA data.
 
@@ -86,15 +85,15 @@ background-image: url(USydLogo.svg)
 background-position: 95% 5%
 background-size: 15%
 
-## .white[Inner workings of the KTMT]
+## .white[Inner workings of the KTPT]
 
 .left[
-#### .white[Survival Analysis of Eplet, HLA and DSA data.]
+#### .white[Metrics to create utilising Eplet, HLA and DSA data.]
 
 - Model of DSA activation and time for class 1 eplets
 - Model of DSA activation and time for class 2 eplets
-- Model of preidciting any type of acute rejection utilising gene eplets counts and HLA mismatches 
-- Model of predicting any type of acute rejection 
+- Model of preidciting any type of acute rejection utilising core eplet data and HLA mismatches 
+- Model of predicting any type of acute rejection utilising core eplet data and eplet mismatches 
 - Model of ACR OR ACM time and True Or False For observation for any time of acute rejection
 
 ]
@@ -105,7 +104,7 @@ background-image: url(USydLogo.svg)
 background-position: 95% 5%
 background-size: 15%
 
-## .white[Inner workings of the KTMT]
+## .white[Inner workings of the KTPT]
 
 .left[
 #### .white[Proposed Models to Investigate the Metrics]
@@ -114,15 +113,51 @@ background-size: 15%
 - By applying the rfs package
 
 *Cross validated Lasso Regression Model*
--  By applying the cv.glmnet function the gomnet package
+-  By applying the cv.glmnet function the glmnet package
 
 *Cross validated Logistic Regression Model*
-- By applying the cv.glmnet function from the gomnet package
+- By applying the cv.glmnet function from the glmnet package
 
 *Cox Regressional model utilising Principal component analysis*
 -  By applying the prcomp function
 ]
 
+---
+
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Inner workings of the KTPT]
+.left[
+#### .white[Metrics to create utilising the Gene Expression dataset and Proposed Models]
+
+*Model of Acute Recjtion utilising gene expression data*
+- Dataset was created by concatentating 4 different dataset.
+#### .white[Proposed Models to Investigate the Metric]
+*Cross Validated Random Forest survival*
+- By applying the rfs package
+
+*Cross validated Lasso Regression Model*
+-  By applying the cv.glmnet function the glmnet package
+
+*Cross validated Logistic Regression Model*
+- By applying the cv.glmnet function from the glmnet package
+
+* model utilising Principal component analysis*
+-  By applying the prcomp function
+
+
+]
+
+---
+class: sydney-yellow, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[User Interface of the KTMT]
 ---
     </textarea>
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
