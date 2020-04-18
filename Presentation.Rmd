@@ -39,15 +39,13 @@ background-size: 15%
 
 4. UI plans
 
-5. Shortcomings and limitations of the KTPT
+5. Approach in Data collection
 
-6. Approach in Data collection
+6. Evaluation metrics to be used.
 
-7. Evaluation metrics to be used.
+7. Timeline and Process
 
-8. Timeline and Process
-
-9. Bibliography
+8. Bibliography
 ]
 
 ---
@@ -91,7 +89,7 @@ background-size: 15%
 ## .white[Inner workings of the KTPT]
 
 .left[
-#### .white[Metrics to create utilising Eplet, HLA and DSA data.]
+#### .white[Metrics to investigate with the Eplet, HLA and DSA data.]
 
 - Model of DSA activation and time for class 1 eplets
 - Model of DSA activation and time for class 2 eplets
@@ -116,13 +114,13 @@ background-size: 15%
 - By applying the rfs package
 
 *Cross validated Lasso Regression Model*
--  By applying the cv.glmnet function the glmnet package
+- By applying the cv.glmnet function the glmnet package
 
 *Cross validated Logistic Regression Model*
 - By applying the cv.glmnet function from the glmnet package
 
 *Cox Regressional model utilising Principal component analysis*
--  By applying the prcomp function
+- By applying the prcomp function
 ]
 
 ---
@@ -134,19 +132,32 @@ background-size: 15%
 
 ## .white[Inner workings of the KTPT]
 .left[
-#### .white[Metrics to create utilising the Gene Expression dataset and Proposed Models]
+#### .white[Main Metric utilising the Gene Expression dataset]
 
-*Model of Acute Recjtion utilising gene expression data*
-- Dataset was created by concatentating 4 different dataset.
-#### .white[Proposed Models to Investigate the Metric]
-The Dataset will first be dimension Reduced.
-The models to be considered are:
-*Support Vector Machine*
--  e1071  package
+*Model of Acute Rejection utilising gene expression data*
+- Dataset was created by concatentating 4 different datasets.
+]
+
+
+---
+
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Inner workings of the KTPT]
+
+.left[#### .white[Proposed Models to Investigate the Metric]    
+
+*Support vector Machines*
+- using the e1071 package
+
 *Random Forest*
-- randomForest package
-*k-Nearest Neighbors model*
-- Knn function
+- using the Random Forest package
+
+*k-Nearest Neighbors*
+- using the knn function
 
 ]
 
@@ -156,5 +167,6 @@ background-image: url(USydLogo.svg)
 background-position: 95% 5%
 background-size: 15%
 
-## .white[User Interface of the KTMT]
+
+## .white[User Interface of the KTPT]
 ---
