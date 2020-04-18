@@ -91,7 +91,7 @@ background-size: 15%
 
 - Model of DSA activation and time for class 1 eplets
 - Model of DSA activation and time for class 2 eplets
-- Model of preidciting any type of acute rejection utilising core eplet data and HLA mismatches 
+- Model of predicting any type of acute rejection utilising core eplet data and HLA mismatches 
 - Model of predicting any type of acute rejection utilising core eplet data and eplet mismatches 
 - Model of ACR OR ACM time and True Or False For observation for any time of acute rejection
 
@@ -168,15 +168,33 @@ background-size: 15%
 
 ## .white[Inner workings of the KTPT]
 
-.left[#### .white[Final outputs and limitations]    
+.left[#### .white[Our Expectations of the Final Models and it's limitations]    
 
+*Logsitic classification models*
+.green[- Easily interpretable predicted probabilities]
+.red[- Thresholding]
 
-
-
-
-
+*PCA*
+.green[- Efficient Predictions with less bias and overfitting.]
+.red[- Information loss]
 ]
 
+---
+
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Inner workings of the KTPT]
+.left[#### .white[Our Expectations of the Final Models and it's limitations]    
+
+*Survival Analysis models*
+
+.green[- hello]
+.red[- what?]
+
+]
 
 
 
@@ -184,7 +202,7 @@ background-size: 15%
 class: sydney-yellow, center, top
 background-image: url(USydLogo.svg), url(Screen_Shot.png)
 background-position: 95% 5%, 50% 50%
-background-size: 15%, 70%
+background-size: 15%, 90%
 
 
 ## .black[User Interface of the KTPT]
@@ -198,22 +216,15 @@ background-size: 15%
 
 
 ## .black[Evaluation metrics]
+
+- Ensure relevant datasets fit the assumptions of the models being used to determine the metrics
+- The best survival analysis model will be selected by the use of the C-Index, a generalisation of the area under the AUC.
+- The best classification model will be determined by the use of standard metrics.
 ---
 class: sydney-yellow, center, top
 background-image: url(USydLogo.svg)
 background-position: 95% 5%
 background-size: 15%
-
-
-
-
-
-
-
-
-
-
-
 
 ## .black[Timeline and Process]
 ---
