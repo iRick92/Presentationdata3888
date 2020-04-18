@@ -1,0 +1,128 @@
+---
+
+title: "Presentation"
+author: "Hoon"
+date: "18/04/2020"
+output: 
+  xaringan::moon_reader:
+    css: ["default", "sydney.css", "sydney-fonts.css"]
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+    seal: false
+---
+
+```{r setup, include = FALSE}
+library(tidyverse)
+```
+class: segue-red
+
+# KTMT Design Schedule
+
+### A presentation by Group 20  
+
+---
+class: sydney-red, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[ Table of Contents]
+
+.left[
+1. The issue at hand
+
+2. Introducing the KTMT
+
+3. Inner workings of the KTMT
+
+4. Basic UI plans
+
+5. Shortcomings and limitations of the KTMT
+
+6. Approach in Data collection
+
+7. Evaluation metrics to be used.
+
+8. Timeline and Process
+
+9. Bibliography
+]
+
+---
+class: sydney-red, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[The issue at hand]
+
+.left[
+- Short term graft success (less than one year) in Australia is 90%, one of the highest in the world.
+- However in the long term, proportion of patient who develops graft rejection is high
+]
+
+---
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Introducing the KTMT]
+
+.left[
+The Kidney Tranplantation Metric Tool is being designed to aid doctors and health professionals in predicting the long term Kidney graft rejection.
+The KTMT has two components:
+1. Eplet and HLA mismatch prediction Tool
+The first component utilizes several metrics derived from the survival analysis of Eplet, HLA and DSA data.
+
+2. Gene Expression prediction Tool
+The second component utilizes microanalysis of gene expression data.
+]
+
+---
+
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Inner workings of the KTMT]
+
+.left[
+#### .white[Survival Analysis of Eplet, HLA and DSA data.]
+
+- Model of DSA activation and time for class 1 eplets
+- Model of DSA activation and time for class 2 eplets
+- Model of preidciting any type of acute rejection utilising core eplet data and HLA mismatches 
+- Model of predicting any type of acute rejection utilising core eplet data and eplet mismatches 
+- Model of ACR OR ACM time and True Or False For observation for any time of acute rejection
+
+]
+
+---
+class: sydney-blue, center, top
+background-image: url(USydLogo.svg)
+background-position: 95% 5%
+background-size: 15%
+
+## .white[Inner workings of the KTMT]
+
+.left[
+#### .white[Proposed Models to Investigate the Metrics]
+
+*Cross Validated Random Forest survival*
+- By applying the rfs package
+
+*Cross validated Lasso Regression Model*
+-  By applying the cv.glmnet function the glmnet package
+
+*Cross validated Logistic Regression Model*
+- By applying the cv.glmnet function from the glmnet package
+
+*Cox Regressional model utilising Principal component analysis*
+-  By applying the prcomp function
+]
+
+---
