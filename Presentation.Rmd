@@ -209,9 +209,9 @@ background-size: 15%
 - The best classification model will be determined by the use of standard metrics.
 ---
 class: sydney-yellow, center, top
-background-image: url(USydLogo.svg)
-background-position: 95% 5%
-background-size: 15%
+background-image: url(USydLogo.svg), url(timeline.jpg)
+background-position: 95% 5%, 50% 50%
+background-size: 15%, 90%
 
 ## .black[Timeline and Process]
 
