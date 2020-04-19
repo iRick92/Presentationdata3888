@@ -88,8 +88,8 @@ background-size: 15%
 .left[
 #### .white[Metrics to investigate with the Eplet, HLA and DSA data.]
 
-- Model of DSA activation and time for class 1 eplets
-- Model of DSA activation and time for class 2 eplets
+- Prediction Model of DSA activation and time with class 1 eplets
+- Prediction Model of DSA activation and time with class 2 eplets
 - Model of predicting any type of acute rejection utilising core eplet data and HLA mismatches 
 - Model of predicting any type of acute rejection utilising core eplet data and eplet mismatches 
 - Model of ACR OR ACM time and True Or False For observation for any time of acute rejection
